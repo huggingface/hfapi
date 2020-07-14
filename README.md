@@ -1,6 +1,6 @@
 # HF API
 
-API client for Hugging Face inference API.
+API client for Hugging Face Inference API, e.g. inference widget on https://huggingface.co/distilbert-base-uncased .
 
 
 See full set of models here: https://huggingface.co/models
