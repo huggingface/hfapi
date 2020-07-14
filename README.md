@@ -36,8 +36,6 @@ client.mask_fill("Paris is the [MASK] of France."))
 ```python
 client.classify("I hated the movie!")
 ```
-
-``` [[{'label': 'NEGATIVE', 'score': 0.9996837973594666}, {'label': 'POSITIVE', 'score': 0.00031621337984688
-58}]]```
+```[[{'label': 'NEGATIVE', 'score': 0.9996837973594666}, {'label': 'POSITIVE', 'score': 0.0003162133798468858}]]```
 
 
