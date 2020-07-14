@@ -14,7 +14,7 @@ client = hfapi.Client()
 ```python
 client.qa("Where does she live?", "She lives in Berlin.")
 ```
-> {'score': 0.9375529668751711, 'start': 13, 'end': 19, 'answer': 'Berlin.'}
+``` {'score': 0.9375529668751711, 'start': 13, 'end': 19, 'answer': 'Berlin.'}```
 
 
 ```python
