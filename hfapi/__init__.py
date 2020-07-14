@@ -22,6 +22,6 @@ class Client:
     def mask_fill(self, input, model="distilbert-base-uncased"):
         return self._call(input, model)
 
-    def classify(input,
+    def classify(self, input,
                  model="distilbert-base-uncased-finetuned-sst-2-english"):
         return self._call(input, model)

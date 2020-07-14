@@ -16,3 +16,8 @@ print()
 print("""client.mask_fill("Paris is the [MASK] of France."))""")
 print(client.mask_fill("Paris is the [MASK] of France."))
 print()
+
+
+print("""client.classify("I hated the movie!")""")
+print(client.classify("I hated the movie!"))
+print()
