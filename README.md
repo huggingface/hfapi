@@ -1,13 +1,11 @@
-<p align="center>
-<img src="https://raw.githubusercontent.com/huggingface/nlp/master/docs/source/imgs/nlp_logo_name.png" width="100" />
-</p>
+<p align="center">
+<img src="https://huggingface.co/" width="200" />
 
 # HF API
 
-Beta API client for Hugging Face Inference API, e.g. inference widget on https://huggingface.co/distilbert-base-uncased .
+Beta API client for Hugging Face Inference API. Directly call any model available in the Model Hub https://huggingface.co/models.
 
-
-See full set of models here: https://huggingface.co/models
+See example inference widget on https://huggingface.co/distilbert-base-uncased.
 
 
 ```python
