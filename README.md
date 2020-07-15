@@ -29,10 +29,12 @@ client.question_answering("Where does she live?", "She lives in Berlin.")
 ## Text Generation
 
 ```python
-client.text_generation("My name is Julien and I like to ")
+client.text_generation("My name is Julien and I like to ", model="gpt2")
 ```
 
-> [{'generated_text': "My name is Julien and I like to ~~~\n\nIf I'm not so successful I go to my school and I am no longer able to attend school (like, I'm not a full-time student in a country, and"}]
+> [{'generated_text': "My name is Julien and I like to \xa0play guitar, rock, record record, I can't thi
+nk of a more unique band, I feel like i'm really connected, I always want to work and im passionate, thi
+s feels like the"}]
 
 ## Summarization
 
