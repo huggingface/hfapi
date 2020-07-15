@@ -8,6 +8,10 @@ Beta API client for Hugging Face Inference API. Directly call any model availabl
 See example inference widget on https://huggingface.co/distilbert-base-uncased.
 
 
+```
+pip install git+https://github.com/huggingface/hfapi/
+```
+
 ```python
 import hfapi
 client = hfapi.Client()
