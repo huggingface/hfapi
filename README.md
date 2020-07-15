@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://huggingface.co/" width="200" />
+<img src="https://huggingface.co/front/assets/huggingface_logo.svg" width="200" />
 
 # HF API
 
