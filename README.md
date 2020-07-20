@@ -8,6 +8,9 @@ Beta API client for Hugging Face Inference API. Directly call any model availabl
 See example inference widget on https://huggingface.co/distilbert-base-uncased.
 
 
+Client also takes an option api key for authorized access. These are available on your huggingface profile.
+
+
 ```
 pip install git+https://github.com/huggingface/hfapi/
 ```

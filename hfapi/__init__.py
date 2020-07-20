@@ -1,12 +1,15 @@
 import requests
 
 class Client:
-    def __init__(self):
-        pass
+    def __init__(self, api_token=None):
+        self.api_token = api_token
 
     def _call(self, query, model):
         model_location = "https://api-inference.huggingface.co/models/" + model
-        return requests.post(model_location, json=query).json()
+        headers = {}
+        if self.api_token is not None:
+            headers = {"Authorization": "Bearer " + self.api_token}
+        return requests.post(model_location, json=query, headers=headers).json()
 
     def question_answering(self, question, context,
            model="distilbert-base-uncased-distilled-squad"):

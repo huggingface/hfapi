@@ -1,9 +1,6 @@
 import hfapi
 client = hfapi.Client()
 
-
-import hfapi
-client = hfapi.Client()
 print("""
 
 ```python
