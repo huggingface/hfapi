@@ -1,4 +1,15 @@
 import requests
+import logging
+import time
+
+
+logger = logging.getLogger(__name__)
+
+
+HTTP_SERVICE_UNAVAILABLE = 503
+
+MAX_RETRIES = 60
+
 
 class Client:
     def __init__(self, api_token=None):
@@ -9,7 +20,20 @@ class Client:
         headers = {}
         if self.api_token is not None:
             headers = {"Authorization": "Bearer " + self.api_token}
-        return requests.post(model_location, json=query, headers=headers).json()
+        retries = 0
+
+        while retries < MAX_RETRIES:
+            retries += 1
+            r = requests.post(model_location, json=query, headers=headers)
+            if r.status_code == HTTP_SERVICE_UNAVAILABLE:
+                # We'll retry
+                # If running under asyncio, be sure to use
+                # `await asyncio.sleep(1)` instead.
+                logger.info("Model is currently loading")
+                time.sleep(1)
+            else:
+                break
+        return r.json()
 
     def question_answering(self, question, context,
            model="distilbert-base-uncased-distilled-squad"):
